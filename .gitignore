@@ -1,0 +1,5 @@
+# ignore all the _build files
+_build/
+*.ris
+
+ALCC_Closeout.pdf
