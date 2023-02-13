@@ -1,0 +1,280 @@
+\documentclass[10pt,fleqn]{scrartcl}
+%\documentclass[10pt]{article}
+\usepackage[fleqn]{amsmath}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage[left=0.5in, right=0.5in, top=0.5in, bottom=0.75in]{geometry}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{gensymb}
+
+%\usepackage[compact]{titlesec}
+
+\usepackage{mathpazo}
+
+\usepackage{enumitem}
+\usepackage{textcomp}
+\usepackage{xcolor}
+
+\urlstyle{same}
+\hypersetup{
+     urlcolor=blue,}
+
+\setcounter{tocdepth}{4}
+
+\newcommand{\school}[3]{
+   \item \textsc{#1} \hfill {#2}\\
+   #3\\
+}
+
+\begin{document}
+
+\noindent
+\textcolor{blue}{\LARGE{\textbf{Khalid Hossain}}} \\
+\textcolor{blue}{\large{Leadership Computing Facility, Argonne National 
+Laboratory}}
+%\begin{flushright}
+%  1650 NE Valley Road, Apt\# J2,\\
+%  Pullman, Washington, 99163 \\
+%  \textbf{\href{mailto:khossain4337@gmail.com}{khossain4337@gmail.com}} \\
+%  \textbf{\href{mailto:mdkhalid.hossain@wsu.edu}{mdkhalid.hossain@wsu.edu}} \\
+%  (509) 339-5978
+%\end{flushright}
+\noindent
+\section*{\textcolor{blue}{Skills}}
+\begin{itemize}
+     \item \textbf{5+} years of experience of developing 
+         \textbf{quantum simulation software} 
+        using denisty functional theory (\textbf{DFT}) with 
+        \textbf{python}.
+    \item High performance computing \textbf{(HPC)} techniques (user level) to 
+        perform one of the largest simulations of the dynamics in fermionic 
+        systems using 
+        \textcolor{blue}{\textbf{\href{https://gitlab.fizyka.pw.edu.pl/wtools/wslda}{wslda-toolkit}}}.
+	\item Understanding of \textbf{superfluidity} (advanced) and 
+        \textbf{superconductivity} (intermediate) at both 
+        \textbf{phenomenological} and \textbf{microscopic} theory level.
+    \item \textbf{Machine learning (ML)} techniques in calculating fission 
+        properties for nuclei using \textbf{PyTorch}.
+    \item Comfortable using \textbf{energy optimization} techniques to 
+        determine initial states in superfluid systems. 
+\end{itemize}
+
+\noindent
+\section*{\textcolor{blue}{Research Experiences}}
+\noindent
+\textbf{Postdoctoral Appointee} \hfill{January 2023 - Current}\\
+Supervisor: Corey Adams \\
+Mentor: Kyle Felker \\
+Leadership Computing Facility, Argonne National Laboratory
+\begin{itemize}
+\item \textit{Deep Learning in Many-body Physics}\\
+    We are working on calculating different ground state properties like 
+        density of nucleons in small to medium sized nuclei employing 
+        artificial neural network (ANN) based representation of the many-body
+        wavefunction, and variational Monte-Carlo technique. The state-of-the-
+        art calculations compute properties of nuclei up to total $6$ nucleons.
+        Our goal is to extend these simulations using distributed computing and
+        leadership class facilities for larger systems (up to $20$), providing
+        us with insights into the fundamental nuclear interactions. 
+
+\item \textit{Performance Analysis of Supercomputing Applications} \\
+    Our aim is to develop performance metrics and analyze them for scientific
+        applications at different levels of distributed computing (single vs. 
+        multiple GPUs, nodes; medium to large scale distribution etc.) 
+        across many available hardware platforms like Intel, Nvidia, AMD etc. 
+        This will allow us to develop better programming strategies to operate
+        leadership class supercomputers near the peak performance level.
+\end{itemize}
+\noindent
+\textbf{Summer Intern} \hfill June 2021 - August 2021\\
+Supervisors: Marc Verriere, Irene Kim, and Nicolas Schunck\\
+Nuclear Data and Theory Group, Lawrence-Livermore National Laboratory
+\begin{itemize}
+\item \textit{Machine learning in nuclear theory}\\
+    We are using machine learning techniques to determine nuclei's ground state 
+    and fission properties across the nuclear chart. The project involves 
+    training a deep neural network (more precisely, a convolutional denoising 
+    autoencoder) to determine the Hartree-Fock-Bogoliubov solution from the 
+    first iterations of HFBTHO, a FORTRAN nuclear Density Functional Theory 
+    code actively developed in the Nuclear Data Group of LLNL. A properly 
+    trained network could drastically reduce the number of iterations to obtain 
+    self-consistent solutions of the HFB equations. The neural network is 
+    conceived and trained using the python library PyTorch.    
+\end{itemize}
+\noindent
+\textbf{Research Assistant}   \hfill May 2016 - May 2022 \\ 
+Supervisor: Michael McNeil Forbes, Ph.D. \\
+Department of Physics and Astronomy, WSU, Pullman, WA
+\begin{itemize}
+  \item \textit{'Negative-mass' hydrodynamics}\\
+  		DFT implementation to simulate the dynamics of trapped $^{87}$Rb 
+        Bose-Einstein condensate. This research led to the identification of 
+        the mechanism behind the origin of effective mass and explained 
+        observed phenomena in this bosonic superfluid system. In collaboration 
+        with the 'Fundamental Quantum Physics' lab of Professor Peter Engels 
+        at Washington State University. 
+  \item \textit{Andreev-Bashkin effect (entrainment, dissipationless 
+    superfluid drag)}\\
+  		Developed an experimental protocol to directly detect bulk 3D 
+        entrainment in the superfluid mixture of $^{174}$Yb (boson) and 
+        $^{6}$Li (fermion). Entrainment has been predicted by A. F. Andreev 
+        and E. P. Bashkin in 1975 and has not been experimentally observed ever 
+        since. The experimental detection is expected to shed light on the 
+        long-standing astrophysical mystery of neutron star 'glitch' -- 
+        a sudden increase in the rotation rate of the star. Entrainment is 
+        believed to play a crucial in the development of this effect. 
+        This research is done in close collaboration with Professor Subhadeep 
+        Gupta's lab at University of Washington.
+  \item \textit{Rotating Quantum Turbulence}\\
+  		Quantum turbulence is characterized by the dynamic interactions between 
+        quantized vortices in superfluids. We are developing orbital-free DFT 
+        models to study these interactions in a rotating system and validate 
+        the results against more accurate TDDFT models like superfluid local 
+        density approximation (SLDA). This validation is crucial to build 
+        orbital-free density functionals to simulate the dynamics in 
+        macroscopically large samples of fermionic superfluids as time 
+        evolution of many orbitals for long times can be quite expensive 
+        numerically. This research is done in collaboration with Professor 
+        Gabriel Wlazłowski's group at Warsaw University of Technology, Poland.
+  	\item \textit{Isotropic Quantum Turbulence}\\
+  		In similar spirit to the rotating turbulence project, but performed for 
+        isotropic  superfluid in a 3D box. Involves handling of much larger 
+        data sets and HPC. Computing assignments and analysis will be performed 
+        in SUMMIT and RHEA -- flagship supercomputing facilities maintained by 
+        Oak Ridge National Lab. 
+\end{itemize}
+
+\noindent
+\section*{\textcolor{blue}{Education}}
+\begin{itemize}
+\school{Washington State University}{Aug 2014 - May 2022}
+            {Department of Physics and Astronomy, Pullman, WA}
+ 		\textbf{Ph.D. in Atomic Physics}  \\
+		\textbf{Advisor: Michael McNeil Forbes, Ph.D.}
+\school{University of Dhaka}{Jan 2012 -  July 2013}
+            {Dhaka, Bangladesh}
+ 		\textbf{Master of Science in Theoretical Physics}  
+\end{itemize}
+
+%\newpage
+
+\noindent
+
+\section*{\textcolor{blue}{Publications}}
+\begin{itemize}
+\item ``Negative-Mass Hydrodynamics in a Spin-Orbit-Coupled Bose-Einstein 
+        Condensate''\\
+	    M. A. Khamehchi, \textbf{K.H.}, M. E. Mossman, Y. Zhang, Th. Busch, 
+        M. M. Forbes, and P. Engels.\\
+	   \href{https://journals.aps.org/prl/abstract/10.1103
+                /PhysRevLett.118.155301}
+	   {\textcolor{blue}{Phys. Rev. Lett. \textbf{118}, 155301 (2017)}}
+\item ``Rotating Quantum Turbulence in the Unitary Fermi Gas''\\
+        \textbf{K.H.}, K. Kobuszewski,  M. M. Forbes, P. Magierski, K. Sekizawa,
+		and G. Wlazłowski.\\
+      \href{https://journals.aps.org/pra/abstract/10.1103/PhysRevA.105.013304}
+        {\textcolor{blue}{Phys. Rev. A \textbf{105}, 013304 (2021)}}
+\item ``Detecting Entrainment in Fermi-Bose Mixture''\\
+	  \textbf{K.H.}, S. Gupta, and M. M. Forbes.\\
+        \href{https://journals.aps.org/pra/abstract/10.1103/
+        PhysRevA.105.063315}{\textcolor{blue}
+        {Phys. Rev. A \textbf{105}, 063315 (2022)}}
+	  
+	  
+\end{itemize}
+
+\noindent
+\section*{\textcolor{blue}{Talks}}
+\begin{itemize}
+\item ``Homogeneous and Isotropic Turbulence across the BEC-BCS Crossover " \\
+			APS DAMOP Virtual Meeting \hfill June, 2021
+\item ``Quantum Turbulence: Generation and Decay in Bosonic and Fermionic Superfluids" \\
+			APS DAMOP Virtual Meeting \hfill June, 2020
+\item ``Energy Dissipation and Vortex Recombination in the Unitary Fermi Gas''\\
+             APS DAMOP meeting   \hfill May, 2019
+\item  ``Detecting Entrainment in Fermi-Bose Mixtures''\\
+		APS DAMOP meeting        \hfill May, 2018
+\item ``Negative-mass Hydrodynamics in a spin-orbit coupled Bose-Einstein 
+	Condensate'' \\
+      APS DAMOP meeting          \hfill June 2017
+\end{itemize}
+
+\noindent
+\section*{\textcolor{blue}{Awards and Honors}}
+\begin{itemize}
+  \item Radziemski Fellowship   \hfill June 2018 \\
+  		College of Arts and Sciences, Washington State University
+%  \item Travel Grant, American Physical Society (APS) \hfill June 2017\\
+% 		48$^{th}$Annual conference \\
+%        Division of Atomic, Molecular and Optical Physics (DAMOP).  		
+\end{itemize} 
+
+\noindent
+\section*{\textcolor{blue}{Teaching and Mentoring Experience}}
+\textbf{Lecturer} \\ 
+\textit{ Washington State University}                               \hfill{Fall 2022}
+\begin{itemize}
+    \item Taught ``Physics 150: Physics and Your World".
+\end{itemize}
+\textbf{Graduate Student Instructor}            \hfill{Spring 2018, 2022}
+\begin{itemize}
+\item Instructor for ``Physics 150".
+\end{itemize}                                                
+
+\textbf{Physics Teaching Assistant (TA)}                                            \hfill Aug 2014 - Dec 2017
+\begin{itemize} 
+\item Lab instructor for introduction to physics (Physics 102, 201, 202).
+\end{itemize}
+\noindent
+
+\section*{\textcolor{blue}{Training and Development}}
+\begin{itemize}
+\item Attended workshop on ``\href{http://www.int.washington.edu/PROGRAMS/19-1a/}
+{\textcolor{blue}{Quantum Turbulence: Cold Atoms, Heavy Ions, and Neutron Stars}}'' \hfill March 2019\\
+Institute of Nuclear Theory \\ 
+University of Washington, Seattle
+\end{itemize}
+%\noindent
+%\section*{\textcolor{blue}{Media Coverage}}
+%\begin{itemize}
+%    \item \textbf{BBC} \quad 
+%		\href{https://www.bbc.com/news/science-environment-39642992}
+%                      {\textcolor{blue}{Physicists observe 'negative mass'}}
+%	\item \textbf{The Guardian} \quad 
+%		\href{https://www.theguardian.com/science/2017/apr/19/scientists-have-
+%		created-a-fluid-with-negative-mass-but-what-does-it-tell-us}
+%		{\textcolor{blue}{Scientists have created a fluid with negative mass -- 
+%		but what does it tell us}}
+%	\item \textbf{APS News}\quad 
+%		\href{https://www.aps.org/publications/apsnews/201707/disperse.cfm}
+%		{\textcolor{blue}{To Disperse, or To Not Disperse: Debating 
+%		``Negative Mass''}}
+%\end{itemize}
+
+%\noindent
+%\section*{\textcolor{blue}{References}}
+%	\begin{tabular}{lll}
+%		\hspace{5pt} Professor Michael Forbes, Ph.D.  & 
+%		\hspace{5pt} Professor Gabriel Wlaz\l{}owski, Ph.D. & 
+%		\hspace{5pt} Professor Peter Engels, Ph.D. \\
+%		\hspace{5pt} Dept. of Physics and Astronomy & 
+%		\hspace{5pt} Faculty of Physics  & 
+%		\hspace{5pt}  Dept. of Physics and Astronomy \\
+%		\hspace{5pt} Washington State University   & 
+%		\hspace{5pt} Warsaw University Technology & 
+%		\hspace{5pt} Washington State University \\
+%		\hspace{5pt} \small{\href{mailto:m.forbes@wsu.edu}
+%		{\textcolor{blue}{m.forbes@wsu.edu}}} & 
+%		\hspace{5pt}\small{\href{mailto:gabriel.wlazlowski@pw.edu.pl}
+%		{\textcolor{blue}{gabriel.wlazlowski@pw.edu.pl}}} & 
+%		\hspace{5pt}\small{\href{mailto:engels@wsu.edu}
+%		{\textcolor{blue}{engels@wsu.edu}}} \\
+%	\end{tabular}
+ 
+
+
+\end{document}
