@@ -23,25 +23,39 @@ the beginning of 2023. My primary responsibilities include developing and
 doing performance 
 analysis of scientific applications running on large distributed computational
 platforms. During the course of my graduate studies I gained experience in 
-doing HPC calculations in Summit at Oak Ridge. Although mostly in user 
-capacity, I believe my experience will allow me to understand and learn the 
-materials presented at ATPESC. The knowledge I will gain from the training will
-put me in a strong position to continue computational research and develop a
-career as a computational scientist.
+doing HPC calculations in Summit at Oak Ridge. These calculations involved
+diagonalizing Hamiltonian matrices for superfluid systems and simulate dynamics
+of turbulent states. I prepared the initial states and wrote job scripts to
+complete the calculations. Beside that, I was introduced to performance analysis
+and scaling behavior of an application. Accurate analysis of performance and
+behavior of an application in a distributed environment requires deep 
+understanding of the hardware and the communication between processors. 
+Attending hands 
+on sessions on MPI, OpenMP and scientific/numerical software design  will be of 
+crucial importance for my medium and 
+long-term career goals. A large part of scientific computing is data analysis
+and visualization, specially for large simulations where tasks need to be done 
+in the HPC environment. I have experience of performing such tasks but 
+attending sessions at ATPESC and having a chance to speak with experts will be
+instrumental in the pursuit of my scientific interests. Overall, ATPESC will 
+broaden the horizon of my computational 
+knowledge by introducing new ideas, trends, techniques and applications which 
+is crucial for my growth as a computational scientist. 
 
 \section*{Previous Experiences}
 
-As part of graduate studies I have simulated quantum turbulence -- generation and
-dynamical evolution of turbulent states in superfluid systems. The goal was to
+As part of graduate studies I have simulated quantum turbulence -- generation 
+and dynamical evolution of turbulent states in superfluid systems. The goal was 
+to
 develop experimentally relevant methods to reliably generate turbulent states
 and explore decay mechanisms for these quantum states. In ordinary fluids the
 decay of a turbulent state is attributed to the presence of viscosity which is
 absent in its known form for superfluid systems. We have validated different 
-processes involving interactions between quantized vortices which rise to an
-effective viscosity facilitating the decay~\cite{Hossain:2022}.
+processes involving interactions between quantized vortices which gives rise to 
+an effective viscosity facilitating the decay~\cite{Hossain:2022}.
 
 Simulating experimentally relevant volumes require leadership class computing
-facilities because of the size of associated states. As an extension of the 
+facilities because of the size of the associated states. As an extension of the 
 physics problem discussed above we have done work on Summit, hosted by Oak Ridge
 national laboratory. There we have ran successful simulation of a fermionic
 superfluid system with $72^3$ lattice, where we diagonalized a $746,496^2$ 
@@ -57,14 +71,18 @@ behavior of our code at such a large scale. During $96^3$ diagonalization we
 saw a degradation in performance, and could not obtain a converged initial state
 for time evolution. For $72^3$, we had almost ideal scaling behavior and 
 expected performance. We are proceeding with $72^3$ analysis, as it is sufficient 
-to obtain physics results, $96^3$ would be an improvement in statistics.
+to obtain physics results, $96^3$ would be an improvement in statistics. One of
+the skills that I would like to learn by attending ATPESC is how to profile
+performance at such large scales, which are optimal performance and debugging 
+tools and how to use them -- leading to an understanding of the degradation of
+performance and failure of convergence for the $96^3$-run, for example.
 
 This work has been done as part of an ALCC project~\cite{Alcc:2021}. We have 
 used a custom time-dependent density functional theory (TD-DFT) based on 
 superfluid local density approximation (SLDA) functional. The primary code is
 written using CUDA for GPU processing, MPI for parallelization and ELPA linear
 algebra libraries for diagonalization. This code has been released publicly as
-W-SLDA toolkit~\cite{Bulgac:2014, W-slda:2023}.
+WSLDA toolkit~\cite{Bulgac:2014, W-slda:2023}.
 
 My primary responsibilities were to prepare seed initial states for the 
 diagonalization, job submission and scheduling scripts via batch jobs 
@@ -82,12 +100,12 @@ frameworks (PyTorch, Tensorflow) used in different applications (convolutional
 networks, graph networks etc.) with varying degree of precision (fp32, tf32, 
 bf16 etc.). Another major aspect of this analysis is to find area
 of improvements in cases of single-node, distributed and very large distributed
-network performance. The success of this project depends on deeper 
+network performance. The success of this project depends on a deeper 
 understanding of distributed programming using MPI or OpenMP. The ATPESC 
 workshop provides a solid foundation in that direction.
 
 One of my long term projects focuses on DL applications in nuclear physics, more
-specifically calculating ground state and static properties of nucleus using
+specifically calculating ground state and static properties of a nucleus using
 Variational Monte Carlo (VMC) techniques. The simplified idea of VMC is to 
 begin a calculation sequence with an estimate of the ground state energy, and
 then minimize that to reach to a minimum energy state within acceptable 
@@ -106,17 +124,21 @@ performing these calculations in leadership class facilities like Polaris and
 Aurora, hosted by Argonne national laboratory. I will be actively contributing 
 in validating and developing code to get physics results along with the
 development of a benchmarking metric to compare performance across different
-hardware setups.
+hardware setups. Attending sessions on DL methods and training large models
+using distributed computing will be pivotal to the success of this project. 
 
 I will be actively working on another long-term project where the goal is to 
 bring in interesting quantum simulations for the supercomputer Aurora. In the
 initial step this could be an extension of my work related to quantum 
-turbulence (citation). The work may involve direct porting of the WSLDA (cite)
+turbulence. The work may involve direct porting of the WSLDA
 application to Aurora by converting it from CUDA to DPC++ (compatible with 
 Intel GPUs) and exploring possible implementation with python frameworks like
 PyTorch, TensorFlow and Jax. Along the same line of developing quantum 
 applications, I also plan to explore many-body entanglement using random matrix
-theory with potential application of DL methods.
+theory with potential application of DL methods. To improve on the performance
+of the WSLDA application, we may have to introduce different type of non-linear
+iterative solvers and numerical methods, ATPESC sessions on these topics will
+have significant impact of my progress in the right direction.
 
 
 \bibliography{reference}
